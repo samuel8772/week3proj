@@ -1,4 +1,4 @@
-.Akan Name Finder
+https://github.com/samuel8772/week3proj.Akan Name Finder
 Description
 
 This web application determines an individual's Akan name based on their birthdate and gender. Akan names originate from Ghanaian culture and are traditionally assigned to children according to the day of the week they were born.
@@ -18,12 +18,12 @@ CSS: For styling the visual appearance of the application.
 JavaScript: For handling user interactions, performing calculations, and dynamically updating the page content.
 Installation
 
-Clone the Repository:
+Clone the Repository:https://github.com/samuel8772/week3proj
 
 Bash
 
 git clone  
-Navigate to the Project Directory:
+Navigate to the Project Directory:https://github.com/samuel8772/week3proj
 
 Bash
 
@@ -51,14 +51,8 @@ Author
 
 SAMUEL KAMAU
 
-Contact
-
-[Your Email Address or GitHub Profile URL]
+MY EMAIL"KAMAUSKK005@GMAIL.COM
 
 This README provides a more detailed and professional description of the project, including a clear breakdown of features, technologies used, installation and usage instructions, and a contribution guide.
 
-Remember to:
-
-Replace <YOUR_REPOSITORY_URL> with the actual URL of your GitHub repository.
-Choose a suitable license and update the link accordingly.
-Fill in your name and contact information.
+CONTACT ME:0722589421 ON WHATSAAP 
