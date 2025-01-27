@@ -33,9 +33,9 @@ function calculateDayOfWeek(day, month, year) {
 
 function getAkanName(dayOfWeek, gender) {
   if (gender === "male") {
-    return maleNames[dayOfWeek];
+    return maleNames[dayOfWeek-1];
   } else {
-    return femaleNames[dayOfWeek];
+    return femaleNames[dayOfWeek-1];
   }
 }
 
