@@ -1,125 +1,47 @@
-#about{
-    background-color: aqua;
-    padding: 30px;
-    border-radius: 5px;
-    margin-bottom: 20px;
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-header{
-    background-color: blue;
-}
-body{
-    background-color: blue;
-}
-#about h2{
-    margin-bottom: 10px;
 
-}
-#about p{
-    front font-size: 16px;
-    line: height 1.5em;
-}
-#photos{
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 0;
     text-align: center;
-
-}
-#photos ul{
-    list-style: none;
-    padding: 0%;
-
-}
-#photos img{
-    max-width: 200px;
-    height: auto;
-    margin: 10px;
-    border:1px seagreen
-    border: radius 5px;
-    
-}
-#photos img{
-    transition: transform 0.2;
-    /*Add transition for smooth hover effect */
-}
-#photos img:hover{
-    transform:scale(1.05);/* enlarge image slightly on hover*/
 }
 
-#photos img{
-    margin: 15px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
 }
-#photos img{
-    /*...otherstyles...*/border:1px solid #ddd; /* use a more neutral border colour */  
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
+
+main {
+    padding: 20px;
 }
-#contact input,#contact textarea{
-    width:100;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px salmon;
-    border-radius: 3px;
-#contact{
-    background-color: aqua;
-    padding: 30px;
-    border-radius: 5px;
-    margin-bottom: 20px;
 
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #f1f1f1;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
-    max-wi
-#contact form{dth: 400px;
-    margin: auto;
 
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
-contact label{
-    display: block;
-    margin-bottom: 5px;
-
-}
-#contact input,#contact textarea{
-    width:100;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px salmon;
-    border-radius: 3px;
-}
-#contact button{
-    background-color: green;
-    color:white;
-    padding: 10px 20px;
-    border-radius:3px;
-    cursor: pointer;
-}
-<section id="contract">
-<h2>contact</h2>
-<form>
-<label for="samuel8772">samuel8772:</proj>
-<input type="text"
-id="samuel8772" name"samuel8772"
-:required><br><br>
-
-<label
-for="email">kamauskk005@gmail.com:</label>
-<input type="email"
-<label
- for="message">Message:</label>
- <textarea id="project"
- name="message" rows="4"
- required></textarea><br><br>
-
-
- <button
- type="submit">send</button>
- </form>
- </section>
- #contact button{
-    background-colour:#4CAF50; /
-    */color:white;
-    padding: 10px 20px;
-    border:none;
-    border-radius:3px;
-    cursor: pointer;
- }
-
-
 
 
 

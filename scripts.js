@@ -1,45 +1,35 @@
 
-const maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
-const femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+const ctx = document.getElementById('fillLevelChart').getContext('2d');
+let fillLevelChart;
 
-const birthdateForm = document.getElementById("birthdateForm");
-const resultParagraph = document.getElementById("result");
-
-birthdateForm.addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  const birthdate = new Date(document.getElementById("birthdate").value);
-  const gender = document.getElementById("gender").value;
-
-  if (gender === "") {
-    alert("Please select a gender.");
-    return;
-  }
-
-  const dayOfWeek = calculateDayOfWeek(birthdate.getDate(), birthdate.getMonth() + 1, birthdate.getFullYear());
-  const akanName = getAkanName(dayOfWeek, gender);
-
-  resultParagraph.textContent = `Your Akan name is: ${akanName}`;
-});
-
-function calculateDayOfWeek(day, month, year) {
-  const century = Math.floor(year / 100);
-  const yearDigits = year % 100;
-
-  const dayOfWeek = (((century / 4) - 2 * century - 1) + ((5 * yearDigits / 4)) + ((26 * (month + 1)) / 10) + day) % 7;
-
-  return Math.floor(dayOfWeek);
+function fetchData() {
+    // Simulate fetching data from a server
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            // Simulated fill levels for 3 bins
+            const data = [Math.floor(Math.random() * 100), Math.floor(Math.random() * 100), Math.floor(Math.random() * 100)];
+            resolve(data);
+        }, 1000);
+    });
 }
 
-function getAkanName(dayOfWeek, gender) {
-  if (gender === "male") {
-    return maleNames[dayOfWeek];
-  } else {
-    return femaleNames[dayOfWeek];
-  }
-}
-
-output.textContent = "Your Akan name is: " + akanName;
-output.style.color = "green";
-output.style.fontSize = "1.5em";
-
+async function updateChart() {
+    const fillLevels = await fetchData();
+    if (fillLevelChart) {
+        fillLevelChart.data.datasets[0].data = fillLevels;
+        fillLevelChart.update();
+    } else {
+        fillLevelChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Bin 1', 'Bin 2', 'Bin 3'],
+                datasets: [{
+                    label: 'Fill Level (%)',
+                    data: fillLevels,
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderColor: 'rgba(75, 192, 192, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
