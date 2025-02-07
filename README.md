@@ -1,4 +1,6 @@
-
+author:samuel kamau karobia
+email:kamauskk005@gmail.com
+contact me on whatsapp:0722589421
 # Waste Management and Recycling System
 
 ## Project Overview
