@@ -39,4 +39,7 @@ To set up the project locally, follow these steps:
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/WasteManagementProject.git
+   git clone https://github.com/yourusername/WasteManagementProject.git.
+
+   THANK YOU
+   
